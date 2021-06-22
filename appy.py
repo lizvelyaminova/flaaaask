@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 import config
 import requests
-import dateparser
 
 
 app = Flask(__name__)
