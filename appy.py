@@ -58,10 +58,10 @@ def prepare_data(data):
         if 'Cells' in element and element['Cells'] is not None:
             cell = element['Cells']
 
-            if 'Name' in cell and 'Sum' in cell:
+            if 'CompanyName' in cell and 'DebtSum' in cell:
                 result.append({
-                    'company_name': cell['Name'],
-                    'sum_count': cell['Sum'],
+                    'company_name': cell['CompanyName'],
+                    'sum_count': cell['DebtSum'],
 
                 })
 
