@@ -3,7 +3,6 @@ from flask import Flask, render_template
 import config
 import requests
 
-
 app = Flask(__name__)
 
 
