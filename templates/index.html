@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кто они, главные должники Москвы?</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        #main-container {
+            background-image: url('https://images.pexels.com/photos/4475523/pexels-photo-4475523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cells-table{
+            background-color: aliceblue;
+            capacity: 0.4;
+            height: 469px;
+            width: 313px;
+            margin-left: auto;
+            margin-rigth: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Топ-100 предпринимателей, которые задолжали рекордные суммы за аренду</h2>
+    <div id="main-container">
+        <table id="cells-table">
+            <thead>
+                <tr>
+                    <th>Название компании</th>
+                    <th>Сумма долга</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for element in data %}
+                    <tr>
+                        <td>{{ element['company_name'] }}</td>
+                        <td>{{ element['sum_count'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
