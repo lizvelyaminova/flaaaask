@@ -60,8 +60,8 @@ def prepare_data(data):
 
             if 'Name' in cell and 'Sum' in cell:
                 result.append({
-                    'month_name': cell['Name'],
-                    'cells_count': cell['Sum'],
+                    'company_name': cell['Name'],
+                    'sum_count': cell['Sum'],
 
                 })
 
